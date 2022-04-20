@@ -56,5 +56,6 @@ out
 atlassian-ide-plugin.xml
 
 
-heroku/
+/heroku
 src/main/java/com/pol/leaguestatsbot/Keys.java
+!/gradle/wrapper/gradle-wrapper.jar
