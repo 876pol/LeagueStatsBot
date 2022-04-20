@@ -1,0 +1,7 @@
+.gradle/
+build/
+.idea/
+gradle/
+src/main/java/com/pol/leaguestatsbot/Keys.java
+gradlew
+gradlew.bat

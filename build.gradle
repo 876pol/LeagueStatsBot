@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+mainClassName = "com.pol.leaguestatsbot.Main"
+sourceCompatibility = '1.11'
+targetCompatibility = '1.11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/net.dv8tion/JDA
+    implementation group: 'net.dv8tion', name: 'JDA', version: '5.0.0-alpha.10'
+
+    // https://mvnrepository.com/artifact/com.merakianalytics.orianna/orianna
+    implementation group: 'com.merakianalytics.orianna', name: 'orianna', version: '4.0.0-rc8'
+
+    // https://mvnrepository.com/artifact/io.quickchart/QuickChart
+    implementation group: 'io.quickchart', name: 'QuickChart', version: '1.2.0'
+
+}
