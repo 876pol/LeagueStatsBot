@@ -5,32 +5,16 @@ import com.merakianalytics.orianna.types.common.Region;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
-import net.dv8tion.jda.api.entities.Activity;
-import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageChannel;
-import net.dv8tion.jda.api.events.guild.member.GuildMemberUpdateEvent;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
-import net.dv8tion.jda.api.events.message.react.MessageReactionAddEvent;
-import net.dv8tion.jda.api.events.message.react.MessageReactionRemoveAllEvent;
-import net.dv8tion.jda.api.events.message.react.MessageReactionRemoveEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import net.dv8tion.jda.api.requests.GatewayIntent;
-import org.jetbrains.annotations.NotNull;
-import org.json.JSONObject;
 
 import javax.security.auth.login.LoginException;
 import java.awt.*;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.*;
 import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class Main extends ListenerAdapter {
     public static JDA jda;
@@ -152,7 +136,6 @@ public class Main extends ListenerAdapter {
         Iterator<Character> it = charSet.iterator();
         char currentChar;
         Integer currentCountStrMap;
-        Integer currentCountCompareStrMap;
         while (it.hasNext()) {
             currentChar = it.next();
             currentCountStrMap = generateCharMap(str).get(currentChar);

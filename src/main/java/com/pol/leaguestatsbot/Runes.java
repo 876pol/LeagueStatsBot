@@ -2,21 +2,10 @@ package com.pol.leaguestatsbot;
 
 import com.merakianalytics.orianna.Orianna;
 import com.merakianalytics.orianna.types.core.staticdata.ReforgedRune;
-import com.merakianalytics.orianna.types.core.staticdata.ReforgedRunePath;
-import com.merakianalytics.orianna.types.core.staticdata.ReforgedRuneSlot;
-import com.merakianalytics.orianna.types.core.staticdata.ReforgedRuneTree;
 import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.entities.Message;
-import net.dv8tion.jda.api.entities.MessageChannel;
-import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
-import net.dv8tion.jda.api.events.message.react.MessageReactionAddEvent;
-import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
-import java.util.Objects;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 public class Runes extends Command {
