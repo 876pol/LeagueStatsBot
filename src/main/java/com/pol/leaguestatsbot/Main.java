@@ -15,6 +15,7 @@ import java.awt.*;
 import java.util.List;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Main extends ListenerAdapter {
     public static JDA jda;
@@ -164,6 +165,6 @@ public class Main extends ListenerAdapter {
     }
 
     public static String appendSpaces(int num) {
-        return " ".repeat(Math.max(0, num + 1));
+        return IntStream.range(0, Math.max(0, num + 1)).mapToObj(i -> " ").collect(Collectors.joining());
     }
 }

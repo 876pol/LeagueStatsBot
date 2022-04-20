@@ -5,8 +5,8 @@ plugins {
 }
 
 mainClassName = "com.pol.leaguestatsbot.Main"
-sourceCompatibility = '1.11'
-targetCompatibility = '1.11'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 repositories {
     mavenCentral()
