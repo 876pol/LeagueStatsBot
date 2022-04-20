@@ -27,7 +27,7 @@ public class Help extends Command {
                 .addField(Main.prefix + " ability *champion name*", "Displays info about a champion's abilities.",
                         false)
                 .addField(Main.prefix + " rune *rune name*", "Displays info about a rune.", false)
-                .addField(Main.prefix + " skin *skin name*", "Displays the splash art for a skin.", false)
+                .addField(Main.prefix + " skin *skin name*", "Displays a skin's splash art.", false)
                 .addField(Main.prefix + " profile *username*", "Displays info about a user.", false)
                 .addField(Main.prefix + " history *username*", "Displays a user's match history.", false)
                 .addField(Main.prefix + " match (*match id* | null)", "Displays info about a user's past or current " +
